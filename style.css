@@ -234,6 +234,7 @@ footer {
 
 .social-icon {
     display: flex;
+    margin-bottom: 20px;
 
 
 }
@@ -262,7 +263,7 @@ footer {
     text-align: right;
     font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
 }
 
@@ -283,23 +284,29 @@ footer {
     .banner {
         height: 695px;
         width: 100%;
+       
     }
-
+    .banner a{
+        position: absolute;
+        width: 100px;
+        height: 22px;
+        left: -104px;
+        top: 213px;
+    }
     .banner,
     .copa-america {
         width: 100%;
-
         display: flex;
         flex-direction: column;
-
+        
     }
 
     .banner h1 {
         width: 100%;
         font-weight: bold;
-
-        margin: 112px 10px;
+        margin: 80px 0px 112px 0px;
         font-size: 36px;
+        
     }
 
     .watch-live {
@@ -308,11 +315,12 @@ footer {
     }
 
     .banner img {
-        width: 329px;
-        width: 100%;
-
-        height: 259.17px;
-        margin-top: 20px;
+        position: absolute;
+    width: 90%;
+    height: 259.17px;
+    left: 16px;
+    top: 164px;
+    
     }
 
     .all-players,
@@ -323,6 +331,7 @@ footer {
         grid-template-columns: 1fr;
         width: 80%;
         margin: 0 auto;
+        
     }
 
     .player {
@@ -330,6 +339,8 @@ footer {
         justify-content: center;
         flex-direction: column;
         align-items: center;
+       
+        
     }
 
     footer {
@@ -338,7 +349,7 @@ footer {
     }
 
     .logo-part img {
-        width: 355px;
+        width: 70%;
         margin: 0 auto;
     }
 
@@ -353,7 +364,7 @@ footer {
         margin: 0 auto;
     }
 
-    . .player {
+     .player {
         justify-content: center;
         flex-direction: column;
         align-items: center
@@ -369,9 +380,11 @@ footer {
     }
 
     .banner h1 {
-        width: 100%;
-        margin: 0 auto;
-        margin: 10px;
+        position: absolute;
+        width: 80%;
+        font-weight: bold;
+        margin: 112px 0px;
+        font-size: 36px;
     }
 
     .banner img {
