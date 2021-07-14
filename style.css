@@ -122,8 +122,33 @@ header {
 
 /* highlights Section 
  */
+ .highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.highlights-info {
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.highlights-pic , .highlights-info{
 
+    margin: 0 auto;
+}
+.highlights-pic img {
+    width: 330px;
+    height: 200px;
+    margin: 0 auto;
+}
 
+.highlights-pic img:hover{
+    transform: scale(1.1) rotate(360deg);
+    transition: transform 2s ease-in;
+    
+}
 
 /* Voting 
   */
@@ -265,17 +290,20 @@ footer {
         margin: 112px 10px;
         font-size: 36px;
     }
+    .watch-live{
+        width: 100%;
+        margin: 0%;
+    }
 
     .banner img {
         width: 329px;
 height: 259.17px;
-left: 344px;
-top: 374px;
+margin-top: 20px;
     }
 
     .all-players,
     .banner,
-    .voting {
+    .voting , .highlights {
         display: grid;
         grid-template-columns: 1fr;
         width: 80%;
@@ -283,6 +311,7 @@ top: 374px;
     }
 
     .player {
+        height: auto;
         justify-content: center;
         flex-direction: column;
         align-items: center;
