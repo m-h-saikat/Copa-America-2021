@@ -2,8 +2,6 @@
 <style>@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 </style>
 
-
-
 /* common CSS */
 body {
     font-family: 'Poppins', sans-serif;
@@ -28,16 +26,19 @@ header {
 /* Banner Section Start */
 .banner {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    display: flex;
+    flex-direction: row;
 
 
 }
 
+.half-width {
+    width: 50%;
+}
 
 .banner h1 {
-    width: 485px;
-    height: 230px;
+    
     font-size: 64px;
     color: #FFFFFF;
     margin-top: 207px;
@@ -45,7 +46,8 @@ header {
     margin-bottom: 27px;
 
 }
- .banner a {
+
+.banner a {
     text-decoration: none;
     width: 168px;
     height: 44px;
@@ -53,11 +55,12 @@ header {
     padding: 10px 24px 10px 24px;
     background: #E02C6D;
     font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
-.arrow{
+
+.arrow {
     margin-left: 8px;
 }
 
@@ -69,17 +72,10 @@ color: #FFFFFF;
     margin-right: 60px;
 
 }
-.copa-america-banner img:hover{
+
+.copa-america-banner img:hover {
     transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transition: transform 1s ease-in;
-    -webkit-transition: transform 1s ease-in;
-    -moz-transition: transform 1s ease-in;
-    -ms-transition: transform 1s ease-in;
-    -o-transition: transform 1s ease-in;
+
 }
 
 /* Banner Section End */
@@ -98,7 +94,7 @@ color: #FFFFFF;
 
     width: 330px;
     height: 470px;
-    margin:  15px 7.5px;
+    margin: 15px 7.5px;
     border: 1px solid white;
     box-shadow: 3px 3px 3px 3px #dbdbdb;
 
@@ -108,123 +104,252 @@ color: #FFFFFF;
 .player-image img {
     width: 300px;
     height: 256px;
-   margin:15px;
+    margin: 15px;
 }
-.player-info h3{
+
+.player-info h3 {
     font-size: 28px;
     margin-top: 0;
     margin-left: 15px;
 }
-.player-info p{
+
+.player-info p {
     font-size: 16px;
     color: #6C6C6C;
-    margin:15px;
-   
+    margin: 15px;
+
 }
 
 /* highlights Section 
  */
 
- 
 
- /* Voting 
+
+/* Voting 
   */
-  .voting{
-      width: 30%;
-      margin: 0 auto;
-      margin-top: 40px;
-      height: 340px;
-      display: flex;
-      flex-direction: column;
-     border: 2px solid purple;
-     background-color: rebeccapurple;
-   
-     align-items: center
+.voting {
+    width: 30%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid purple;
+    background-color: rebeccapurple;
+    align-items: center
+}
 
-
-    
-  }
-  .voting h2{
+.voting h2 {
     align-items: center;
     margin: 15px;
     color: white;
-  }
-  .voting form{
-      align-content: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center
-
-  }
-  input{
-      padding: 4px;
-      text-align: center;
-      margin-bottom: 0 auto;
-      border: 2px solid purple;
-      border-radius: 5px ;
-      -webkit-border-radius: 5px ;
-      -moz-border-radius: 5px ;
-      -ms-border-radius: 5px ;
-      -o-border-radius: 5px ;
 }
-label{
-    margin-top:5px ;
+
+.voting form {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+input {
+    padding: 4px;
+    text-align: center;
+    margin-bottom: 0 auto;
+    border: 2px solid purple;
+    border-radius: 5px;
+    font-size: 1.1em;
+
+}
+
+label {
+    margin-top: 5px;
     color: white;
 }
-button{
+
+button {
     color: red;
     background-color: yellowgreen;
     margin-top: 15px;
     padding: 5px 10px;
-    
+
 }
-button:hover{
+
+button:hover {
     transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+    background-color: rgb(175, 233, 121);
+
 }
 
 
 /* Footer Section  */
- footer{
-     width: 50%;
-     height: 213px;
-     margin: 0 auto;
-     margin-top: 158px;
-     display: flex;
-     align-content: center;
-     flex-direction: column;
-     align-items: center
+footer {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center
+}
 
-
- }
- .logo-part img{
+.logo-part img {
     width: 483.87px;
     height: 110px;
- }
- .social-icon{
-     display: flex;
-     
-    
- }
- .social-icon a{
-     text-decoration: none;
-     color:##969BAB
+}
 
- }
- .social-icon i{
+.social-icon {
+    display: flex;
+
+
+}
+
+.social-icon a {
+    text-decoration: none;
+    color: #969BAB;
+    font-size: 28px;
+
+}
+
+.social-icon i {
     margin: 0px 14px;
     height: 32px;
     width: 32px;
-    background-color: ##E7E7E8;
-    color:##969BAB;
- }
- .copyright{
+
+    color: #969BAB;
+
+}
+
+}
+
+.copyright {
     display: flex;
     align-items: center;
     text-align: right;
     font-size: 18px;
-line-height: 24px;
- }
+
+}
+
+.copyright i {
+    font-size: 13px;
+}
+
+/* Media quiries */
+
+
+/* Mobile Screen  */
+@media only screen and (max-width:688px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .banner{
+        height: 695px;
+    }
+
+    .banner,
+    .copa-america  {
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .banner h1 {
+        width: 100%;
+        font-weight: bold;
+
+        margin: 112px 10px;
+        font-size: 36px;
+    }
+
+    .banner img {
+        width: 329px;
+height: 259.17px;
+left: 344px;
+top: 374px;
+    }
+
+    .all-players,
+    .banner,
+    .voting {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .player {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+footer{
+    width: 70%;
+    margin-bottom: 187px;
+}
+    .logo-part img {
+        width: 355px;
+        margin: 0 auto;
+    }
+
+}
+
+/* for ipad Device  */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .all-players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    . .player {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .banner,
+    footer,
+    .copa-america {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .banner h1 {
+        width: 100%;
+        margin: 0 auto;
+        margin: 10px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .all-players,
+    .banner,
+    .voting {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .player {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer img {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+}
