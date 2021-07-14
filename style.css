@@ -12,20 +12,7 @@ body {
 
 }
 
-a {
-    text-decoration: none;
-    width: 168px;
-    height: 44px;
-    margin-left: 156px;
-    padding: 10px 24px 10px 24px;
-    background: #E02C6D;
-    font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-color: #FFFFFF;
-}
 
-.Link-Text {}
 
 /* header Section  */
 header {
@@ -36,6 +23,7 @@ header {
 
 
 }
+
 
 /* Banner Section Start */
 .banner {
@@ -57,19 +45,43 @@ header {
     margin-bottom: 27px;
 
 }
-
+ .banner a {
+    text-decoration: none;
+    width: 168px;
+    height: 44px;
+    margin-left: 156px;
+    padding: 10px 24px 10px 24px;
+    background: #E02C6D;
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
 .arrow{
     margin-left: 8px;
 }
 
 .copa-america-banner img {
-    width: 556.01px;
+    width: 90%;
     height: 438px;
     margin-top: 153px;
     margin-bottom: 86px;
-    margin-right: 140px;
+    margin-right: 60px;
 
 }
+.copa-america-banner img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: transform 1s ease-in;
+    -webkit-transition: transform 1s ease-in;
+    -moz-transition: transform 1s ease-in;
+    -ms-transition: transform 1s ease-in;
+    -o-transition: transform 1s ease-in;
+}
+
 /* Banner Section End */
 
 
@@ -112,21 +124,107 @@ header {
 
 /* highlights Section 
  */
- .highlights{
-     
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     width: 1050px;
-     margin: 0 auto;
-     margin-top: 150px;
- }
- .highlights-info h2{
-    font-size: 48px;
- }
- 
+
  
 
- .highlights-image img{
-    width: 567px;
-    height: 427px;
+ /* Voting 
+  */
+  .voting{
+      width: 30%;
+      margin: 0 auto;
+      margin-top: 40px;
+      height: 340px;
+      display: flex;
+      flex-direction: column;
+     border: 2px solid purple;
+     background-color: rebeccapurple;
+   
+     align-items: center
+
+
+    
+  }
+  .voting h2{
+    align-items: center;
+    margin: 15px;
+    color: white;
+  }
+  .voting form{
+      align-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center
+
+  }
+  input{
+      padding: 4px;
+      text-align: center;
+      margin-bottom: 0 auto;
+      border: 2px solid purple;
+      border-radius: 5px ;
+      -webkit-border-radius: 5px ;
+      -moz-border-radius: 5px ;
+      -ms-border-radius: 5px ;
+      -o-border-radius: 5px ;
+}
+label{
+    margin-top:5px ;
+    color: white;
+}
+button{
+    color: red;
+    background-color: yellowgreen;
+    margin-top: 15px;
+    padding: 5px 10px;
+    
+}
+button:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+/* Footer Section  */
+ footer{
+     width: 50%;
+     height: 213px;
+     margin: 0 auto;
+     margin-top: 158px;
+     display: flex;
+     align-content: center;
+     flex-direction: column;
+     align-items: center
+
+
+ }
+ .logo-part img{
+    width: 483.87px;
+    height: 110px;
+ }
+ .social-icon{
+     display: flex;
+     
+    
+ }
+ .social-icon a{
+     text-decoration: none;
+     color:##969BAB
+
+ }
+ .social-icon i{
+    margin: 0px 14px;
+    height: 32px;
+    width: 32px;
+    background-color: ##E7E7E8;
+    color:##969BAB;
+ }
+ .copyright{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-size: 18px;
+line-height: 24px;
  }
