@@ -5,14 +5,10 @@
 /* common CSS */
 body {
     font-family: 'Poppins', sans-serif;
-
-
-
 }
 
 
-
-/* header Section  */
+/* --------header Section -------- */
 header {
     height: 677px;
     width: 100%;
@@ -23,7 +19,7 @@ header {
 }
 
 
-/* Banner Section Start */
+/* ------------Banner Section Start----------- */
 .banner {
     width: 100%;
     height: auto;
@@ -38,7 +34,7 @@ header {
 }
 
 .banner h1 {
-    
+
     font-size: 64px;
     color: #FFFFFF;
     margin-top: 207px;
@@ -78,11 +74,15 @@ header {
 
 }
 
-/* Banner Section End */
+/*------- Banner Section End------------ */
 
 
 
-/* Main Section Start */
+/*--------- Main Section Start------------ */
+
+
+/* ---------Player Section Start-------- */
+
 .all-players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -98,7 +98,8 @@ header {
     border: 1px solid white;
     box-shadow: 3px 3px 3px 3px #dbdbdb;
 }
- p{
+
+p {
     color: #6C6C6C;
 }
 
@@ -118,12 +119,14 @@ header {
     font-size: 16px;
     color: #6C6C6C;
     margin: 15px;
-
 }
 
-/* highlights Section 
- */
- .highlights {
+/* ---------Player Section Start-------- */
+
+
+
+/* ------highlights Section ---------*/
+.highlights {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 70%;
@@ -131,28 +134,31 @@ header {
     margin-top: 50px;
     justify-content: space-between;
 }
+
 .highlights-info {
     margin-top: 80px;
     margin-left: 20px;
 }
-.highlights-pic , .highlights-info{
+
+.highlights-pic,
+.highlights-info {
 
     margin: 0 auto;
 }
+
 .highlights-pic img {
     width: 330px;
     height: 200px;
     margin: 0 auto;
 }
 
-.highlights-pic img:hover{
+.highlights-pic img:hover {
     transform: scale(1.1) rotate(360deg);
     transition: transform 2s ease-in;
-    
+
 }
 
-/* Voting 
-  */
+/* -----------Voting Section------  */
 .voting {
     width: 30%;
     padding: 10px;
@@ -209,7 +215,7 @@ button:hover {
 }
 
 
-/* Footer Section  */
+/* -----------Footer Section --------- */
 footer {
     width: 50%;
     height: auto;
@@ -264,23 +270,25 @@ footer {
     font-size: 13px;
 }
 
-/* Media quiries */
+/*------------ Media quiries------------- */
 
 
-/* Mobile Screen  */
+/* ------------Mobile Screen ------------ */
 @media only screen and (max-width:688px) {
     body {
         width: 100%;
         margin: 0 auto;
     }
-    .banner{
+
+    .banner {
         height: 695px;
+        width: 100%;
     }
 
     .banner,
-    .copa-america  {
+    .copa-america {
         width: 100%;
-        
+
         display: flex;
         flex-direction: column;
 
@@ -293,20 +301,24 @@ footer {
         margin: 112px 10px;
         font-size: 36px;
     }
-    .watch-live{
+
+    .watch-live {
         width: 100%;
         margin: 0%;
     }
 
     .banner img {
         width: 329px;
-height: 259.17px;
-margin-top: 20px;
+        width: 100%;
+
+        height: 259.17px;
+        margin-top: 20px;
     }
 
     .all-players,
     .banner,
-    .voting , .highlights {
+    .voting,
+    .highlights {
         display: grid;
         grid-template-columns: 1fr;
         width: 80%;
@@ -319,10 +331,12 @@ margin-top: 20px;
         flex-direction: column;
         align-items: center;
     }
-footer{
-    width: 70%;
-    margin-bottom: 187px;
-}
+
+    footer {
+        width: 70%;
+        margin-bottom: 187px;
+    }
+
     .logo-part img {
         width: 355px;
         margin: 0 auto;
@@ -330,7 +344,7 @@ footer{
 
 }
 
-/* for ipad Device  */
+/* -------------for ipad Device-----------  */
 @media only screen and (min-width:688px) and (max-width:992px) {
     .all-players {
         display: grid;
