@@ -97,8 +97,9 @@ header {
     margin: 15px 7.5px;
     border: 1px solid white;
     box-shadow: 3px 3px 3px 3px #dbdbdb;
-
-
+}
+ p{
+    color: #6C6C6C;
 }
 
 .player-image img {
@@ -254,6 +255,8 @@ footer {
     align-items: center;
     text-align: right;
     font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 
